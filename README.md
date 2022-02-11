@@ -1,4 +1,7 @@
 # MetaGet
+
+A program for extracting metadata from documents
+
 Opportunities:
 1. It can work through the Tora network, private and public proxies.
 2. Bypasses the captcha, through public proxies.
