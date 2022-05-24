@@ -27,16 +27,16 @@ Options:
 --restart - Downloads the document
 Usage examples:
 1.Extracting metadata from documents:
-    python MetaFinder.py -e paths --if Paths are folders, it will search them for documents corresponding to the extension.
-    python MetaFinder.py -e paths -f docx pdf - extracts information from documents with the docx and pdf extension. 
+    python3 MetaGet.py -e paths --if Paths are folders, it will search them for documents corresponding to the extension.
+    python3 MetaGet.py -e paths -f docx pdf - extracts information from documents with the docx and pdf extension. 
 2. Downloading documents, followed by analysis:
-    python MetaFinder.py -d domain/list domains -- downloads documents with extensions : doc,docx,ppt,xlsx,xls,csv,jpg,jpeg,bmp from the specified domain/domains. 
-    python MetaFinder.py -d domains -f docx pdf -- downloads docx and pdf documents from the specified domain/domains. 
-    python MetaFinder.py -d domains -f docx -w 30 -c 1 -ex html -s result -- downloading docx documents from the specified domain only from the first page,
+    python3 MetaGet.py -d domain/list domains -- downloads documents with extensions : doc,docx,ppt,xlsx,xls,csv,jpg,jpeg,bmp from the specified domain/domains. 
+    python3 MetaGet.py -d domains -f docx pdf -- downloads docx and pdf documents from the specified domain/domains. 
+    python3 MetaGet.py -d domains -f docx -w 30 -c 1 -ex html -s result -- downloading docx documents from the specified domain only from the first page,
         with an interval between requests of 30 seconds and the output of the result in an html document result.html .
-    python MetaFinder.py -d domains --tor --will download doc,docx,ppt,xlsx,xls,csv,jpg,jpeg,bmp documents via the TOR network from the specified domain.
+    python3 MetaGet.py -d domains --tor --will download doc,docx,ppt,xlsx,xls,csv,jpg,jpeg,bmp documents via the TOR network from the specified domain.
 3.Downloading documents using links from a file
-    python MetaFinder.py --restart 
+    python3 MetaGet.py --restart 
 
 Instructions for installing the TOR service.
 For Windows:
