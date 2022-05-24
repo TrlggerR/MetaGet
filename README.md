@@ -1,8 +1,9 @@
-# MetaGet
+#MetaGet
 
 A program for extracting metadata from documents
 
 Opportunities:
+```
 1. It can work through the Tora network, private and public proxies.
 2. Bypasses the captcha, through public proxies.
 3. Can download documents by links from a file.
@@ -12,6 +13,8 @@ Opportunities:
 7. Uses random headers with user-agent.For each request, it substitutes cookies and random time between requests, thereby reducing the chance of receiving a captcha.
 8. The result can be written in json, csv, html or txt files, beautifully designed in the form of a table.(When writing a report to json, there may be problems with encoding Russian characters!)
 9. Multithreaded downloading of found files.
+```
+
 Options:
 ```
 -d - Domain.You can specify multiple domains, separated by a space.
@@ -27,8 +30,9 @@ Options:
  Proxy format: "http": "http://user:pass@10.10.1.10:3128 /","https": "https://user:pass@10.10.1.10:3128 /" .
 --restart - Downloads the document
 ```
-Usage examples:
 
+Usage examples:
+```
 1.Extracting metadata from documents:
     python3 MetaGet.py -e paths --if Paths are folders, it will search them for documents corresponding to the extension.
     python3 MetaGet.py -e paths -f docx pdf - extracts information from documents with the docx and pdf extension. 
@@ -40,9 +44,11 @@ Usage examples:
     python3 MetaGet.py -d domains --tor --will download doc,docx,ppt,xlsx,xls,csv,jpg,jpeg,bmp documents via the TOR network from the specified domain.
 3.Downloading documents using links from a file
     python3 MetaGet.py --restart 
+```
 
 Instructions for installing the TOR service.
 For Windows:
+```
     1.Download the Expert Bundle from the official website https://www.torproject.org/ru/download/tor/
     2.Unpack the downloaded archive to any convenient location.
     3.Open a command prompt, go to the Tor folder and run tor with the command tor.exe .
@@ -59,12 +65,13 @@ For Windows:
     Start the tor service C:\Tor\tor.exe --service install -options -f "C:\Tor\torrc " 
     C:\Tor\tor.exe --service start
     to stop the service, enter C:\Tor\tor.exe --service stop
-
+```
 For Linux:
+```
     1.Install tor with the command: sudo apt install tor
     2.Start the service: sudo systemctl start tor
     3.Add to the file /etc/tor/torrc MaxCircuitDirtiness 60 
-
+```
 Tested on windows 10 pro and Kali Linux
 
-ONLY DOCUMENT FORMATS ARE SUPPORTED IN THIS VERSION.:jpeg, jpg, gif, png, bmp, tif, tiff, jpe, jfif,pdf,docx,xlsx,pptx
+_ONLY DOCUMENT FORMATS ARE SUPPORTED IN THIS VERSION.:jpeg, jpg, gif, png, bmp, tif, tiff, jpe, jfif,pdf,docx,xlsx,pptx_
