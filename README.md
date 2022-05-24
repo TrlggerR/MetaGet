@@ -3,15 +3,15 @@
 A program for extracting metadata from documents
 
 Opportunities:
-1. It can work through the Tora network, private and public proxies.
-2. Bypasses the captcha, through public proxies.
-3. Can download documents by links from a file.
-4. Searches for open index of directories and downloads files from them.
-5. A unique algorithm for a more thorough search of documents (it also searches on hidden pages and downloads all documents by default).
-6. Can extract metadata from documents.
-7. Uses random headers with user-agent.For each request, it substitutes cookies and random time between requests, thereby reducing the chance of receiving a captcha.
-8. The result can be written in json, csv, html or txt files, beautifully designed in the form of a table.(When writing a report to json, there may be problems with encoding Russian characters!)
-9. Multithreaded downloading of found files.
+-1. It can work through the Tora network, private and public proxies.
+-2. Bypasses the captcha, through public proxies.
+-3. Can download documents by links from a file.
+-4. Searches for open index of directories and downloads files from them.
+-5. A unique algorithm for a more thorough search of documents (it also searches on hidden pages and downloads all documents by default).
+-6. Can extract metadata from documents.
+-7. Uses random headers with user-agent.For each request, it substitutes cookies and random time between requests, thereby reducing the chance of receiving a captcha.
+-8. The result can be written in json, csv, html or txt files, beautifully designed in the form of a table.(When writing a report to json, there may be problems with encoding Russian characters!)
+-9. Multithreaded downloading of found files.
 Options:
 -d - Domain.You can specify multiple domains, separated by a space.
 -f is the file format for downloading or analysis.You can specify multiple arguments, separated by a space.
