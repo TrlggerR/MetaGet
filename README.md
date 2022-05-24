@@ -1,4 +1,4 @@
-#MetaGet
+# MetaGet
 
 A program for extracting metadata from documents
 
